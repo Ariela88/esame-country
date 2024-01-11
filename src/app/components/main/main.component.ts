@@ -37,8 +37,6 @@ export class MainComponent implements OnInit {
 
   sortCountries(sortBy: string): void {
     this.currentSort = sortBy;
-
-
     let filteredCountries = this.countries;
     if (this.showWesternEurope) {
       filteredCountries = filteredCountries.filter(country => country.subregion === 'Western Europe');
