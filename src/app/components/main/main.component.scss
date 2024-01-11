@@ -1,0 +1,88 @@
+.list-container{
+  display: flex;
+  width: 95%;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  margin: 24px;
+}
+
+
+label{
+  font-size: 12px;
+}
+
+
+.filter-toolbar{
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  height: 50px;
+  background-color: rgb(255, 231, 171);
+}
+
+.checkbox{
+  display: flex;
+  margin-right: 16px;
+  font-size: 20px;
+
+}
+
+.button-container button{
+  width: 200px;
+}
+
+.checkbox:hover{
+  color: red;
+
+}
+
+.checkpox-filter-container{
+  display: flex;
+  width: 100%;
+}
+
+.button-container{
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  justify-content: flex-end;
+  margin-right: 24px;
+}
+
+.title-filter{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: 'Righteous', sans-serif;
+  margin: 0 16px;
+}
+
+@media(max-width:500px)  {
+
+  .filter-toolbar{
+    width: 100%;
+    flex-direction: column;
+   gap:4px;
+   margin-bottom: 20px;
+  }
+
+  .list-container{
+
+
+    margin: 70px  0 0 0 ;
+  }
+
+  .button-container{
+    margin-top: 8px;
+  }
+
+  .no-mobile{
+    display: none;
+  }
+
+
+}
