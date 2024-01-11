@@ -35,6 +35,7 @@ export class MainComponent implements OnInit {
     this.comunication.getAllCountryNames().subscribe((res) => (this.countryNames = res));
   }
 
+  //ordinamento per i bottoni e filtro per le subregion
   sortCountries(sortBy: string): void {
     this.currentSort = sortBy;
     let filteredCountries = this.countries;
@@ -60,6 +61,7 @@ export class MainComponent implements OnInit {
     this.sortedCountries = [...filteredCountries];
   }
 
+  //togle per l'ordinamento asc o desc al doppio click
   toggleSortOrder(sortBy: string): void {
     if (this.currentSort !== sortBy) {
       this.sortOrder = 'asc';
@@ -72,9 +74,8 @@ export class MainComponent implements OnInit {
     this.sortCountries(sortBy);
   }
 
-
+//evitare che restino checkate più di una checkbox
   filterCountries(subregion: string): void {
-
     if (subregion !== 'Western Europe') {
       this.showWesternEurope = false;
     }

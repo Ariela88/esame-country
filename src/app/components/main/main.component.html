@@ -28,11 +28,12 @@
 
   <div class="button-container">
     <span class="no-mobile">Ordina per: </span>
-    <button mat-raised-button color="warn" (click)="toggleSortOrder('name')">Ordina per Nome <mat-icon>{{ascending ? 'arrow_drop_up' : 'arrow_drop_down'}}</mat-icon></button>
-    <button mat-raised-button color="warn" (click)="toggleSortOrder('population')">Ordina per Abitanti <mat-icon>{{ascending ? 'arrow_drop_up' : 'arrow_drop_down'}}</mat-icon></button>
+    <button mat-raised-button color="warn" (click)="toggleSortOrder('name')">Ordina per Nome <mat-icon>{{ascending ?
+        'arrow_drop_up' : 'arrow_drop_down'}}</mat-icon></button>
+    <button mat-raised-button color="warn" (click)="toggleSortOrder('population')">Ordina per Abitanti
+      <mat-icon>{{ascending ? 'arrow_drop_up' : 'arrow_drop_down'}}</mat-icon></button>
   </div>
 </div>
-
 <div class="list-container">
   <app-country-card *ngFor="let country of sortedCountries" [country]="country"></app-country-card>
 </div>

@@ -10,5 +10,4 @@ export class CountryCardComponent {
   @Input() country?: Country;
   @Input() countryName?: CountryName;
 
-
 }
